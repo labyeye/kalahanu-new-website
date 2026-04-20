@@ -1,55 +1,55 @@
-/* ===================================
-   CSS Variables - Color Palette
-   =================================== */
-:root {
-  /* Primary Colors - Inspired by the provided palette */
-  --primary-color: #080814; /* Very Dark Navy/Black */
-  --secondary-color: #d49d35; /* Golden Yellow */
-  --accent-color: #b78347; /* Bronze/Tan */
-  --accent-light: #f3d890; /* Soft Cream/Yellow */
-  --deep-brown: #58290b; /* Deep Chocolate Brown */
 
-  /* Neutral Colors */
+
+
+:root {
+  
+  --primary-color: #080814; 
+  --secondary-color: #d49d35; 
+  --accent-color: #b78347; 
+  --accent-light: #f3d890; 
+  --deep-brown: #58290b; 
+
+  
   --white: #ffffff;
   --light-gray: #f8f9fa;
   --gray: #6c757d;
   --dark-gray: #1a1a1a;
   --black: #000000;
 
-  /* Background Colors */
+  
   --bg-light: #ffffff;
   --bg-warm: #fff9f0;
   --bg-dark: #080814;
 
-  /* Text Colors */
+  
   --text-primary: #080814;
   --text-secondary: #58290b;
   --text-light: #718096;
 
-  /* Spacing */
+  
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
 
-  /* Border Radius */
+  
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
 
-  /* Shadows */
+  
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
 
-  /* Transitions */
+  
   --transition: all 0.3s ease;
 }
 
-/* ===================================
-   Global Styles
-   =================================== */
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -96,9 +96,9 @@ ul {
   list-style: none;
 }
 
-/* ===================================
-   Typography
-   =================================== */
+
+
+
 h1 {
   font-size: 2.75rem;
   font-weight: 400;
@@ -134,9 +134,9 @@ p {
   margin-bottom: 1rem;
 }
 
-/* ===================================
-   Buttons
-   =================================== */
+
+
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.75rem;
@@ -183,9 +183,9 @@ p {
   transform: translateY(-2px);
 }
 
-/* ===================================
-   Navigation
-   =================================== */
+
+
+
 .navbar {
   position: fixed;
   top: 0;
@@ -253,7 +253,7 @@ p {
   width: 100%;
 }
 
-/* Dropdown Menu */
+
 .dropdown {
   position: relative;
 }
@@ -312,7 +312,7 @@ p {
   color: var(--secondary-color);
 }
 
-/* Hamburger Menu */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -339,9 +339,9 @@ p {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* ===================================
-   Hero Section
-   =================================== */
+
+
+
 .hero {
   position: relative;
   height: 650px;
@@ -446,9 +446,9 @@ p {
   }
 }
 
-/* ===================================
-   Stats Section
-   =================================== */
+
+
+
 .stats-section {
   background-color: var(--white);
   padding: 3rem 0;
@@ -496,9 +496,9 @@ p {
   margin: 0;
 }
 
-/* ===================================
-   Section Styles
-   =================================== */
+
+
+
 section {
   padding: 4rem 0;
 }
@@ -518,9 +518,9 @@ section {
   color: var(--text-secondary);
 }
 
-/* ===================================
-   About Preview Section
-   =================================== */
+
+
+
 .about-preview {
   background-color: var(--bg-light);
 }
@@ -560,9 +560,9 @@ section {
   font-size: 1rem;
 }
 
-/* ===================================
-   Brands Section
-   =================================== */
+
+
+
 .brands-grid {
   display: flex;
   flex-direction: column;
@@ -725,9 +725,9 @@ section {
   }
 }
 
-/* ===================================
-   Services Section
-   =================================== */
+
+
+
 .services-section {
   background-color: var(--bg-light);
 }
@@ -797,9 +797,9 @@ section {
   gap: 0.75rem;
 }
 
-/* ===================================
-   Why Choose Us Section
-   =================================== */
+
+
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -827,9 +827,9 @@ section {
   margin: 0;
 }
 
-/* ===================================
-   CTA Section
-   =================================== */
+
+
+
 .cta-section {
   position: relative;
   color: var(--white);
@@ -902,9 +902,9 @@ section {
   margin-right: auto;
 }
 
-/* ===================================
-   Footer
-   =================================== */
+
+
+
 .footer {
   background-color: var(--primary-color);
   color: var(--white);
@@ -1046,9 +1046,9 @@ section {
   color: var(--secondary-color);
 }
 
-/* ===================================
-   Scroll to Top Button
-   =================================== */
+
+
+
 .scroll-top {
   position: fixed;
   bottom: 2rem;
@@ -1077,9 +1077,9 @@ section {
   transform: translateY(-3px);
 }
 
-/* ===================================
-   Utility Classes
-   =================================== */
+
+
+
 .text-center {
   text-align: center;
 }
@@ -1097,9 +1097,9 @@ section {
   margin-bottom: 2rem;
 }
 
-/* ===================================
-   Responsive Design
-   =================================== */
+
+
+
 @media (max-width: 768px) {
   html {
     font-size: 14px;
@@ -1209,9 +1209,9 @@ section {
   }
 }
 
-/* ===================================
-   Page Header
-   =================================== */
+
+
+
 .page-header {
   position: relative;
   color: var(--white);
@@ -1252,9 +1252,9 @@ section {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* ===================================
-   About Page Styles
-   =================================== */
+
+
+
 .company-overview {
   padding: 4rem 0;
 }
@@ -1468,11 +1468,11 @@ section {
   margin: 0;
 }
 
-/* ===================================
-   New About Page Sections
-   =================================== */
 
-/* Split sections (text + image) */
+
+
+
+
 .about-split-section {
   padding: 4rem 0;
 }
@@ -1498,6 +1498,7 @@ section {
 .split-text p {
   color: var(--text-secondary);
   line-height: 1.8;
+  text-align: justify;
 }
 
 .split-image img {
@@ -1512,11 +1513,12 @@ section {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   object-fit: cover;
-  max-height: 220px;
-  max-width: 190px;
+  max-height: 290px;
+  max-width: 250px;
+  margin-left: 200px;
 }
 
-/* Our Values */
+
 .our-values-section {
   padding: 5rem 0;
   background: #ffffff;
@@ -1569,7 +1571,7 @@ section {
   text-align: justify;
 }
 
-/* Leaders Section */
+
 .leaders-section {
   padding: 4rem 0;
   overflow: hidden;
@@ -1641,7 +1643,7 @@ section {
   color: var(--secondary-color);
 }
 
-/* Hover: expand to a card */
+
 .leader-item:hover {
   width: 200px;
   height: 300px;
@@ -1688,9 +1690,9 @@ section {
   }
 }
 
-/* ===================================
-   Brands Page Styles
-   =================================== */
+
+
+
 .brands-showcase {
   padding: 4rem 0;
 }
@@ -1764,9 +1766,9 @@ section {
   margin: 0;
 }
 
-/* ===================================
-   Services Page Styles
-   =================================== */
+
+
+
 .service-hero {
   position: relative;
   color: var(--white);
@@ -1863,9 +1865,9 @@ section {
   flex-shrink: 0;
 }
 
-/* ===================================
-   Contact Page Styles
-   =================================== */
+
+
+
 .contact-section {
   padding: 4rem 0;
 }
@@ -1968,9 +1970,9 @@ section {
   min-height: 120px;
 }
 
-/* ===================================
-   Location Pages
-   =================================== */
+
+
+
 .location-content {
   padding: 4rem 0;
 }
@@ -2023,9 +2025,9 @@ section {
   margin: 0;
 }
 
-/* ===================================
-   Responsive Updates
-   =================================== */
+
+
+
 @media (max-width: 768px) {
   .page-header {
     padding: 5rem 0 2.5rem;
@@ -2061,14 +2063,14 @@ section {
   }
 }
 
-/* ============================================================
-   HOMEPAGE REDESIGN — PREMIUM CORPORATE STYLES
-   All colors use existing CSS variables only.
-   ============================================================ */
 
-/* ===================================
-   Section Eyebrow Labels
-   =================================== */
+
+
+
+
+
+
+
 .section-eyebrow {
   display: inline-block;
   font-size: 0.75rem;
@@ -2079,9 +2081,9 @@ section {
   margin-bottom: 0.75rem;
 }
 
-/* ===================================
-   Navbar — Homepage Transparent Mode
-   =================================== */
+
+
+
 .navbar.navbar-home {
   background-color: transparent;
   box-shadow: none;
@@ -2091,7 +2093,7 @@ section {
     backdrop-filter 0.45s ease;
 }
 
-/* Dark blurred background on scroll */
+
 .navbar.navbar-home.scrolled {
   background-color: rgba(8, 8, 20, 0.96);
   backdrop-filter: blur(14px);
@@ -2099,7 +2101,7 @@ section {
   box-shadow: 0 2px 30px rgba(0, 0, 0, 0.45);
 }
 
-/* White nav text when transparent */
+
 .navbar.navbar-home:not(.scrolled) .nav-menu li a {
   color: var(--white);
 }
@@ -2112,12 +2114,12 @@ section {
   background-color: var(--secondary-color);
 }
 
-/* White hamburger lines when transparent */
+
 .navbar.navbar-home:not(.scrolled) .hamburger span {
   background-color: var(--white);
 }
 
-/* Logo + tagline layout */
+
 .logo-with-tagline {
   display: flex;
   flex-direction: column;
@@ -2136,7 +2138,7 @@ section {
   transition: color 0.3s ease;
 }
 
-/* Gold CTA button in nav */
+
 .btn-nav-cta {
   background-color: var(--secondary-color) !important;
   color: var(--primary-color) !important;
@@ -2157,16 +2159,16 @@ section {
   box-shadow: var(--shadow-md);
 }
 
-/* ===================================
-   Hero — Cinematic Enhancement
-   =================================== */
+
+
+
 .hero.hero-cinematic {
   height: 100vh;
   min-height: 620px;
-  margin-top: 0; /* Overlaps navbar since it's transparent */
+  margin-top: 0; 
 }
 
-/* Animated gold mesh grid */
+
 .mesh-grid {
   position: absolute;
   inset: 0;
@@ -2188,7 +2190,7 @@ section {
   }
 }
 
-/* Floating ambient orbs */
+
 .orb {
   position: absolute;
   border-radius: 50%;
@@ -2235,7 +2237,7 @@ section {
   }
 }
 
-/* Hero content layout */
+
 .hero-content-cinematic {
   text-align: center;
   position: relative;
@@ -2245,7 +2247,7 @@ section {
   padding: 0 1.5rem;
 }
 
-/* Eyebrow label — animates first */
+
 .hero-eyebrow {
   display: inline-block;
   font-size: 0.7rem;
@@ -2260,7 +2262,7 @@ section {
   animation: fadeInUp 0.7s ease 0.3s both;
 }
 
-/* Main heading — animates second */
+
 .hero-title-large {
   font-size: clamp(1.875rem, 5.5vw, 3.75rem);
   line-height: 1.12;
@@ -2269,7 +2271,7 @@ section {
   animation: fadeInUp 0.8s ease 0.65s both;
 }
 
-/* Subheading — animates third */
+
 .hero.hero-cinematic .hero-subtitle {
   font-size: 1.0625rem;
   color: rgba(255, 255, 255, 0.85);
@@ -2280,7 +2282,7 @@ section {
   max-width: 620px;
 }
 
-/* Trust stats row — animates fourth */
+
 .hero-stats {
   display: flex;
   justify-content: center;
@@ -2333,12 +2335,12 @@ section {
   flex-shrink: 0;
 }
 
-/* CTA buttons — animate last */
+
 .hero-buttons-animated {
   animation: fadeInUp 0.8s ease 1.6s both;
 }
 
-/* Scroll indicator */
+
 .scroll-indicator {
   position: absolute;
   bottom: 2rem;
@@ -2386,9 +2388,9 @@ section {
   }
 }
 
-/* ===================================
-   Brand Partners — Infinite Marquee
-   =================================== */
+
+
+
 .partners-strip {
   background-color: var(--primary-color);
   padding: 2.25rem 0;
@@ -2412,7 +2414,7 @@ section {
   width: 100%;
 }
 
-/* The track is double-width, CSS animates it 50% left for a seamless loop */
+
 .marquee-track {
   display: flex;
   align-items: center;
@@ -2441,7 +2443,7 @@ section {
 
 .marquee-item:hover {
   opacity: 1;
-  /* Shift to gold on hover */
+  
   filter: brightness(0) saturate(100%) invert(68%) sepia(50%) saturate(650%)
     hue-rotate(3deg) brightness(1.1);
 }
@@ -2470,9 +2472,9 @@ section {
   }
 }
 
-/* ===================================
-   Our Companies Section
-   =================================== */
+
+
+
 .companies-section {
   background-color: var(--bg-light);
   padding: 5.5rem 0;
@@ -2495,7 +2497,7 @@ section {
   overflow: hidden;
 }
 
-/* Gold top border that expands on hover */
+
 .company-card::before {
   content: "";
   position: absolute;
@@ -2522,7 +2524,7 @@ section {
   box-shadow: var(--shadow-lg);
 }
 
-/* Icon with hover rotation */
+
 .company-card-image {
   background: linear-gradient(
     135deg,
@@ -2611,9 +2613,9 @@ section {
   opacity: 0.8;
 }
 
-/* ===================================
-   About the Group — Split Layout
-   =================================== */
+
+
+
 .about-group {
   background-color: var(--white);
   padding: 5.5rem 0;
@@ -2627,7 +2629,7 @@ section {
   margin-bottom: 4rem;
 }
 
-/* Image with animated border trace on entry */
+
 .about-image-wrap {
   position: relative;
   border-radius: var(--radius-lg);
@@ -2672,7 +2674,7 @@ section {
   margin-bottom: 1.25rem;
 }
 
-/* Animated gold divider */
+
 .gold-divider {
   height: 3px;
   background: linear-gradient(
@@ -2690,7 +2692,7 @@ section {
   width: 100%;
 }
 
-/* Animated checklist with gold bullets */
+
 .about-checklist {
   list-style: none;
   margin-bottom: 1.75rem;
@@ -2727,7 +2729,7 @@ section {
   background-color: var(--accent-color);
 }
 
-/* Vision / Mission cards */
+
 .vm-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2760,9 +2762,9 @@ section {
   margin-bottom: 0.875rem;
 }
 
-/* ===================================
-   Business Verticals
-   =================================== */
+
+
+
 .verticals-section {
   background-color: var(--primary-color);
   padding: 5.5rem 0;
@@ -2799,7 +2801,7 @@ section {
   overflow: hidden;
 }
 
-/* Gold hover wash */
+
 .vertical-card::after {
   content: "";
   position: absolute;
@@ -2868,9 +2870,9 @@ section {
   z-index: 1;
 }
 
-/* ===================================
-   Why Choose Us
-   =================================== */
+
+
+
 .why-us-section {
   background-color: var(--bg-light);
   padding: 5.5rem 0;
@@ -2904,7 +2906,7 @@ section {
   animation: iconFloat 4s ease-in-out infinite;
 }
 
-/* Stagger float animation per child */
+
 .why-us-item:nth-child(1) i {
   animation-delay: 0s;
 }
@@ -2946,9 +2948,9 @@ section {
   margin: 0;
 }
 
-/* ===================================
-   Clients / Trust Section
-   =================================== */
+
+
+
 .clients-section {
   background-color: var(--white);
   padding: 5.5rem 0;
@@ -3006,7 +3008,7 @@ section {
   color: var(--text-light);
 }
 
-/* Animated stats row inside clients section */
+
 .clients-stat-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -3048,9 +3050,9 @@ section {
   margin-top: 0.6rem;
 }
 
-/* ===================================
-   Founder / Chairman Message
-   =================================== */
+
+
+
 .founder-section {
   background-color: var(--bg-light);
   padding: 5.5rem 0;
@@ -3064,7 +3066,7 @@ section {
   margin-top: 3rem;
 }
 
-/* Gold glowing frame around photo */
+
 .founder-frame {
   position: relative;
   width: 200px;
@@ -3147,9 +3149,9 @@ section {
   letter-spacing: 0.04em;
 }
 
-/* ===================================
-   CTA Banner — Full-Width Animated
-   =================================== */
+
+
+
 .cta-banner {
   position: relative;
   padding: 7rem 0;
@@ -3187,7 +3189,7 @@ section {
   margin-right: auto;
 }
 
-/* Pulsing CTA button */
+
 .cta-pulse-btn {
   animation: ctaPulse 2.8s ease-in-out infinite;
 }
@@ -3202,9 +3204,9 @@ section {
   }
 }
 
-/* ===================================
-   Footer — Corporate 4-Column
-   =================================== */
+
+
+
 .footer-corporate .footer-grid-corporate {
   display: flex;
   flex-wrap: wrap;
@@ -3212,7 +3214,7 @@ section {
   justify-content: space-between;
 }
 
-/* Animated gold separator line */
+
 .footer-gold-line {
   height: 2px;
   background: linear-gradient(
@@ -3230,9 +3232,9 @@ section {
   width: 100%;
 }
 
-/* ===================================
-   Scroll Reveal Animation System
-   =================================== */
+
+
+
 .reveal-up,
 .reveal-left,
 .reveal-right {
@@ -3260,9 +3262,9 @@ section {
   transform: translate(0, 0);
 }
 
-/* ===================================
-   Homepage Responsive Breakpoints
-   =================================== */
+
+
+
 @media (max-width: 1024px) {
   .why-us-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -3280,13 +3282,13 @@ section {
 }
 
 @media (max-width: 768px) {
-  /* Full-height hero on mobile */
+  
   .hero.hero-cinematic {
     height: 100svh;
     min-height: 580px;
   }
 
-  /* Collapse stat dividers on mobile */
+  
   .hero-stat-divider {
     display: none;
   }
@@ -3294,31 +3296,31 @@ section {
     gap: 1.5rem;
   }
 
-  /* Disable heavy orbs on mobile for perf */
+  
   .orb-1,
   .orb-2,
   .orb-3 {
     display: none;
   }
 
-  /* About: stack layout */
+  
   .about-group-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
 
-  /* Verticals: single column */
+  
   .verticals-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Why: 2 columns */
+  
   .why-us-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
   }
 
-  /* Clients: 2 columns */
+  
   .clients-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3326,12 +3328,12 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Companies: single column */
+  
   .companies-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Founder: stack */
+  
   .founder-layout {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -3345,12 +3347,12 @@ section {
     border-top: none;
   }
 
-  /* VM grid: stack */
+  
   .vm-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Logo tagline: hide on mobile */
+  
   .logo-tagline {
     display: none;
   }
@@ -3377,11 +3379,11 @@ section {
   }
 }
 
-/* ============================================================
-   HERO — SPLIT LAYOUT (replaces cinematic slider)
-   ============================================================ */
 
-/* Override transparent navbar for white-bg split hero */
+
+
+
+
 .navbar.navbar-home:not(.scrolled) {
   background-color: var(--white) !important;
   box-shadow: var(--shadow-sm) !important;
@@ -3396,7 +3398,7 @@ section {
   background-color: var(--primary-color) !important;
 }
 
-/* Hero container */
+
 .hero.hero-split {
   background-color: var(--white);
   height: auto;
@@ -3409,7 +3411,7 @@ section {
   overflow: visible;
 }
 
-/* Two-column grid */
+
 .hero-split-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -3417,7 +3419,7 @@ section {
   align-items: center;
 }
 
-/* Left content column */
+
 .hero-content-split {
   position: static;
   z-index: auto;
@@ -3456,7 +3458,7 @@ section {
   text-decoration: none;
 }
 
-/* Stats on light background */
+
 .hero-stats-light {
   justify-content: flex-start;
   margin-bottom: 2rem;
@@ -3479,7 +3481,7 @@ section {
   background: rgba(8, 8, 20, 0.18);
 }
 
-/* CTA buttons */
+
 .hero-buttons-split {
   justify-content: flex-start;
   margin-bottom: 0.75rem;
@@ -3531,7 +3533,7 @@ section {
   margin-bottom: 1.5rem;
 }
 
-/* Partner trust badges row */
+
 .hero-trust-badges {
   display: flex;
   align-items: center;
@@ -3553,7 +3555,7 @@ section {
   opacity: 1;
 }
 
-/* Right visual column */
+
 .hero-visual-col {
   position: relative;
   display: flex;
@@ -3564,7 +3566,7 @@ section {
   animation: fadeInUp 0.8s ease 0.5s both;
 }
 
-/* Gradient border wrapper */
+
 .hero-vc-outer {
   position: relative;
   border-radius: 22px;
@@ -3579,7 +3581,7 @@ section {
   margin-bottom: 0;
 }
 
-/* Card inside gradient border */
+
 .hero-vc-card {
   position: relative;
   border-radius: 19px;
@@ -3599,7 +3601,7 @@ section {
   display: block;
 }
 
-/* Top badge (like "AS SEEN ON SHARK TANK") */
+
 .hero-vc-badge-top {
   position: absolute;
   top: 1rem;
@@ -3633,7 +3635,7 @@ section {
   line-height: 1.2;
 }
 
-/* Bottom name/location overlay */
+
 .hero-vc-footer {
   position: absolute;
   bottom: 0;
@@ -3665,7 +3667,7 @@ section {
   text-transform: uppercase;
 }
 
-/* Video play button overlay */
+
 .hero-vc-play-btn {
   position: absolute;
   top: 50%;
@@ -3688,7 +3690,7 @@ section {
   pointer-events: none;
 }
 
-/* Reduce card size responsively */
+
 @media (max-width: 1200px) {
   .hero-vc-outer {
     max-width: 340px;
@@ -3726,7 +3728,7 @@ section {
   box-shadow: 0 0 20px var(--accent-color);
 }
 
-/* Floating testimonial card (bottom-left of card column) */
+
 .hero-float-card {
   background: var(--white);
   border: 3px solid var(--accent-color);
@@ -3765,7 +3767,7 @@ section {
   color: var(--gray);
 }
 
-/* Scroll indicator on light bg */
+
 .scroll-indicator-dark .scroll-indicator-line {
   background: linear-gradient(to bottom, transparent, rgba(8, 8, 20, 0.3));
 }
@@ -3774,9 +3776,9 @@ section {
   color: var(--primary-color);
 }
 
-/* ===================================
-   YOU'RE IN GOOD COMPANY SECTION
-   =================================== */
+
+
+
 .good-company-section {
   background-color: var(--white);
   padding: 4rem 0 4.5rem;
@@ -3830,9 +3832,9 @@ section {
   transform: scale(1.08);
 }
 
-/* ===================================
-   HERO SPLIT — RESPONSIVE
-   =================================== */
+
+
+
 @media (max-width: 1024px) {
   .hero-split-grid {
     gap: 2.5rem;

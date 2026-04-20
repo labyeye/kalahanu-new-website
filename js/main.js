@@ -1,6 +1,6 @@
-// ===================================
-// Mobile Navigation Toggle
-// ===================================
+
+
+
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
 
@@ -10,7 +10,7 @@ if (hamburger && navMenu) {
         navMenu.classList.toggle('active');
     });
 
-    // Close menu when clicking on a link
+    
     const navLinks = document.querySelectorAll('.nav-menu a');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -20,9 +20,9 @@ if (hamburger && navMenu) {
     });
 }
 
-// ===================================
-// Mobile Dropdown Toggle
-// ===================================
+
+
+
 const dropdowns = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach(dropdown => {
@@ -38,9 +38,9 @@ dropdowns.forEach(dropdown => {
     }
 });
 
-// ===================================
-// Navbar Scroll Effect
-// ===================================
+
+
+
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
@@ -51,9 +51,9 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===================================
-// Scroll to Top Button
-// ===================================
+
+
+
 const scrollTopBtn = document.getElementById('scrollTop');
 
 if (scrollTopBtn) {
@@ -73,17 +73,17 @@ if (scrollTopBtn) {
     });
 }
 
-// ===================================
-// Counter Animation
-// ===================================
+
+
+
 const counters = document.querySelectorAll('.stat-number');
 let counterAnimated = false;
 
 const animateCounters = () => {
     counters.forEach(counter => {
         const target = parseInt(counter.getAttribute('data-target'));
-        const duration = 2000; // 2 seconds
-        const increment = target / (duration / 16); // 60 FPS
+        const duration = 2000; 
+        const increment = target / (duration / 16); 
         let current = 0;
 
         const updateCounter = () => {
@@ -100,7 +100,7 @@ const animateCounters = () => {
     });
 };
 
-// Intersection Observer for Counter Animation
+
 const observerOptions = {
     threshold: 0.5
 };
@@ -119,14 +119,14 @@ if (statsSection) {
     observer.observe(statsSection);
 }
 
-// ===================================
-// Smooth Scrolling for Anchor Links
-// ===================================
+
+
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
 
-        // Skip if it's just "#" or empty
+        
         if (href === '#' || href === '') {
             e.preventDefault();
             return;
@@ -145,9 +145,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ===================================
-// Active Navigation Link Highlight
-// ===================================
+
+
+
 const currentLocation = window.location.pathname.split('/').pop();
 const navItems = document.querySelectorAll('.nav-menu li a');
 
@@ -160,16 +160,16 @@ navItems.forEach(item => {
     }
 });
 
-// ===================================
-// Form Validation (for contact pages)
-// ===================================
+
+
+
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Get form fields
+        
         const name = document.getElementById('name');
         const email = document.getElementById('email');
         const phone = document.getElementById('phone');
@@ -177,16 +177,16 @@ if (contactForm) {
 
         let isValid = true;
 
-        // Clear previous errors
+        
         document.querySelectorAll('.error-message').forEach(el => el.remove());
 
-        // Validate name
+        
         if (name && name.value.trim() === '') {
             showError(name, 'Name is required');
             isValid = false;
         }
 
-        // Validate email
+        
         if (email && email.value.trim() === '') {
             showError(email, 'Email is required');
             isValid = false;
@@ -195,7 +195,7 @@ if (contactForm) {
             isValid = false;
         }
 
-        // Validate phone
+        
         if (phone && phone.value.trim() === '') {
             showError(phone, 'Phone number is required');
             isValid = false;
@@ -204,14 +204,14 @@ if (contactForm) {
             isValid = false;
         }
 
-        // Validate message
+        
         if (message && message.value.trim() === '') {
             showError(message, 'Message is required');
             isValid = false;
         }
 
         if (isValid) {
-            // Show success message
+            
             showSuccess();
             contactForm.reset();
         }
@@ -265,9 +265,9 @@ function isValidPhone(phone) {
     return re.test(phone.replace(/\s+/g, ''));
 }
 
-// ===================================
-// Background Slider
-// ===================================
+
+
+
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
@@ -278,11 +278,11 @@ if (slides.length > 0) {
         slides[currentSlide].classList.add('active');
     };
 
-    // Auto rotate every 5 seconds
+    
     setInterval(nextSlide, 5000);
 }
 
-// CTA Background Slider
+
 const ctaSlides = document.querySelectorAll('.cta-slide');
 let currentCtaSlide = 0;
 
@@ -293,13 +293,13 @@ if (ctaSlides.length > 0) {
         ctaSlides[currentCtaSlide].classList.add('active');
     };
 
-    // Auto rotate every 6 seconds
+    
     setInterval(nextCtaSlide, 6000);
 }
 
-// ===================================
-// Image Lazy Loading Fallback
-// ===================================
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('img[data-src]');
 
@@ -317,9 +317,9 @@ document.addEventListener('DOMContentLoaded', () => {
     images.forEach(img => imageObserver.observe(img));
 });
 
-// ===================================
-// Add CSS animations dynamically
-// ===================================
+
+
+
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideIn {
@@ -346,15 +346,15 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// ===================================
-// Console Message
-// ===================================
+
+
+
 console.log('%cKalahanu Both Group', 'font-size: 20px; font-weight: bold; color: #1a2c5b;');
 console.log('%cWebsite developed with ❤️', 'font-size: 12px; color: #ff6b35;');
 
-// ===================================
-// Brand Cards Animation
-// ===================================
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const brandCards = document.querySelectorAll('.brand-card');
     
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const brandCardObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    // Slight delay for each card if they appear at once
+                    
                     setTimeout(() => {
                         entry.target.classList.add('animate-in');
                     }, index * 100);
@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }, {
-            threshold: 0.2, // Trigger when 20% of the card is visible
+            threshold: 0.2, 
             rootMargin: '0px 0px -50px 0px'
         });
 
@@ -378,4 +378,28 @@ document.addEventListener('DOMContentLoaded', () => {
             brandCardObserver.observe(card);
         });
     }
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentElement;
+            const isOpen = faqItem.classList.contains('open');
+            
+            
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('open');
+            });
+            
+            
+            if (!isOpen) {
+                faqItem.classList.add('open');
+            }
+        });
+    });
 });

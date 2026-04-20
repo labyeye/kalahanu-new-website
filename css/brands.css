@@ -1,9 +1,9 @@
-/* Brand Pages Specific CSS */
+
 :root {
-    --brand-overlay: rgba(10, 25, 47, 0.85); /* Darker overlay for brand heroes */
+    --brand-overlay: rgba(10, 25, 47, 0.85); 
 }
 
-/* Stats Section */
+
 .brand-stats {
     padding: 5rem 0;
     background-color: var(--light-gray);
@@ -46,7 +46,7 @@
     font-size: 0.875rem;
 }
 
-/* Why Kalahanu Section */
+
 .why-brand {
     padding: 8rem 0;
 }
@@ -64,7 +64,7 @@
     box-shadow: var(--shadow-lg);
 }
 
-/* Products Slider */
+
 .products-section {
     padding: 8rem 0;
     background-color: var(--primary-color);
@@ -130,7 +130,7 @@
     font-size: 1.25rem;
 }
 
-/* Masonry Grid */
+
 .masonry-section {
     padding: 8rem 0;
 }
@@ -178,7 +178,7 @@
     font-weight: 600;
 }
 
-/* Benefits Section */
+
 .benefits-section {
     padding: 8rem 0;
     background: var(--light-gray);
@@ -209,7 +209,7 @@
     box-shadow: var(--shadow-lg);
 }
 
-/* Locations Bihar Focus */
+
 .locations-brand {
     padding: 8rem 0;
 }
@@ -235,7 +235,7 @@
 
 .location-tag i { color: var(--secondary-color); }
 
-/* Responsive Adjustments */
+
 @media (max-width: 992px) {
     .why-brand-content { grid-template-columns: 1fr; }
     .why-brand-image { order: -1; }
