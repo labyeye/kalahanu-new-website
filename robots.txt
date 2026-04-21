@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kalahanubothgroup.com/sitemap.xml
+Sitemap: https://kalahanu.org/sitemap.xml

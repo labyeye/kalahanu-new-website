@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 (function initScrollReveal() {
   const revealEls = document.querySelectorAll(
     ".reveal-up, .reveal-left, .reveal-right",
@@ -37,19 +27,6 @@
   revealEls.forEach((el) => observer.observe(el));
 })();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 (function initHeroCounters() {
   const heroNums = document.querySelectorAll(".hero-stat-number");
   if (!heroNums.length) return;
@@ -74,15 +51,10 @@
     tick();
   }
 
-  
   setTimeout(() => {
     heroNums.forEach(countUp);
   }, 1800);
 })();
-
-
-
-
 
 (function initClientCounters() {
   const statRow = document.querySelector(".clients-stat-row");
@@ -125,11 +97,6 @@
   observer.observe(statRow);
 })();
 
-
-
-
-
-
 (function initAboutReveal() {
   const targets = [
     document.querySelector(".about-image-wrap"),
@@ -152,10 +119,6 @@
   targets.forEach((el) => observer.observe(el));
 })();
 
-
-
-
-
 (function initFooterGoldLine() {
   const goldLine = document.querySelector(".footer-gold-line");
   if (!goldLine) return;
@@ -174,10 +137,6 @@
   observer.observe(goldLine);
 })();
 
-
-
-
-
 (function initFounderReveal() {
   const section = document.querySelector(".founder-section");
   if (!section) return;
@@ -185,7 +144,6 @@
   const paragraphs = section.querySelectorAll(".founder-message");
   if (!paragraphs.length) return;
 
-  
   paragraphs.forEach((p) => {
     p.style.opacity = "0";
     p.style.transform = "translateY(18px)";
@@ -216,10 +174,6 @@
   observer.observe(section);
 })();
 
-
-
-
-
 (function initScrollSpy() {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll("a.nav-link");
@@ -245,10 +199,6 @@
   sections.forEach((s) => observer.observe(s));
 })();
 
-
-
-
-
 (function initChecklistStagger() {
   const checklists = document.querySelectorAll(".about-checklist");
   checklists.forEach((list) => {
@@ -258,9 +208,6 @@
     });
   });
 })();
-
-
-
 
 console.log(
   "%cKalahanu Bothra Group",
